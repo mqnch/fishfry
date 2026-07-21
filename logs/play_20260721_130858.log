@@ -1,0 +1,243 @@
+13:08:58 [referee] >>> uci
+13:08:58 [referee] <<< id name Twin 1.0
+13:08:58 [referee] <<< id author fpan
+13:08:58 [referee] <<< option name Hash type spin default 64 min 1 max 4096
+13:08:58 [referee] <<< option name Threads type spin default 1 min 1 max 1
+13:08:58 [referee] <<< option name Ponder type check default false
+13:08:58 [referee] <<< uciok
+13:08:58 [referee] >>> isready
+13:08:58 [referee] <<< readyok
+13:08:58 [referee] >>> ucinewgame
+13:08:58 [stockfish] >>> uci
+13:08:58 [stockfish] <<< Stockfish 18 by the Stockfish developers (see AUTHORS file)
+13:08:59 [stockfish] <<< id name Stockfish 18
+13:08:59 [stockfish] <<< id author the Stockfish developers (see AUTHORS file)
+13:08:59 [stockfish] <<< 
+13:08:59 [stockfish] <<< option name Debug Log File type string default <empty>
+13:08:59 [stockfish] <<< option name NumaPolicy type string default auto
+13:08:59 [stockfish] <<< option name Threads type spin default 1 min 1 max 1024
+13:08:59 [stockfish] <<< option name Hash type spin default 16 min 1 max 33554432
+13:08:59 [stockfish] <<< option name Clear Hash type button
+13:08:59 [stockfish] <<< option name Ponder type check default false
+13:08:59 [stockfish] <<< option name MultiPV type spin default 1 min 1 max 256
+13:08:59 [stockfish] <<< option name Skill Level type spin default 20 min 0 max 20
+13:08:59 [stockfish] <<< option name Move Overhead type spin default 10 min 0 max 5000
+13:08:59 [stockfish] <<< option name nodestime type spin default 0 min 0 max 10000
+13:08:59 [stockfish] <<< option name UCI_Chess960 type check default false
+13:08:59 [stockfish] <<< option name UCI_LimitStrength type check default false
+13:08:59 [stockfish] <<< option name UCI_Elo type spin default 1320 min 1320 max 3190
+13:08:59 [stockfish] <<< option name UCI_ShowWDL type check default false
+13:08:59 [stockfish] <<< option name SyzygyPath type string default <empty>
+13:08:59 [stockfish] <<< option name SyzygyProbeDepth type spin default 1 min 1 max 100
+13:08:59 [stockfish] <<< option name Syzygy50MoveRule type check default true
+13:08:59 [stockfish] <<< option name SyzygyProbeLimit type spin default 7 min 0 max 7
+13:08:59 [stockfish] <<< option name EvalFile type string default nn-c288c895ea92.nnue
+13:08:59 [stockfish] <<< option name EvalFileSmall type string default nn-37f18f62d772.nnue
+13:08:59 [stockfish] <<< uciok
+13:08:59 [stockfish] >>> isready
+13:08:59 [stockfish] <<< readyok
+13:08:59 [stockfish] >>> ucinewgame
+13:08:59 [b:twin] >>> uci
+13:08:59 [b:twin] <<< id name Twin 1.0
+13:08:59 [b:twin] <<< id author fpan
+13:08:59 [b:twin] <<< option name Hash type spin default 64 min 1 max 4096
+13:08:59 [b:twin] <<< option name Threads type spin default 1 min 1 max 1
+13:08:59 [b:twin] <<< option name Ponder type check default false
+13:08:59 [b:twin] <<< uciok
+13:08:59 [b:twin] >>> isready
+13:08:59 [b:twin] <<< readyok
+13:08:59 [b:twin] >>> ucinewgame
+13:08:59 [referee] >>> position startpos
+13:08:59 [referee] >>> d
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | r | n | b | q | k | b | n | r |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | p | p | p | p | p | p | p | p |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | P | P | P | P | P | P | P | P |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | R | N | B | Q | K | B | N | R |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<< FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -
+13:08:59 [referee] >>> position startpos
+13:08:59 [referee] >>> go depth 1
+13:08:59 [referee] <<< info depth 1 seldepth 1 score cp 47 nodes 24 nps 24 time 0 pv d2d4
+13:08:59 [referee] <<< bestmove d2d4
+13:08:59 [stockfish] >>> position startpos
+13:08:59 [stockfish] >>> go movetime 200
+13:08:59 [stockfish] <<< info string Available processors: 0-7
+13:08:59 [stockfish] <<< info string Using 1 thread
+13:08:59 [stockfish] <<< info string NNUE evaluation using nn-c288c895ea92.nnue (125MiB, (102384, 1024, 15, 32, 1))
+13:08:59 [stockfish] <<< info string NNUE evaluation using nn-37f18f62d772.nnue (6MiB, (22528, 128, 15, 32, 1))
+13:08:59 [stockfish] <<< info string Network replica 1: Local memory. Shared memory not supported by the OS. Local allocation fallback.
+13:08:59 [stockfish] <<< info depth 1 seldepth 2 multipv 1 score cp -1 nodes 20 nps 10000 hashfull 0 tbhits 0 time 2 pv e2e4
+13:08:59 [stockfish] <<< info depth 2 seldepth 3 multipv 1 score cp 27 nodes 48 nps 24000 hashfull 0 tbhits 0 time 2 pv e2e4
+13:08:59 [stockfish] <<< info depth 3 seldepth 4 multipv 1 score cp 35 nodes 103 nps 51500 hashfull 0 tbhits 0 time 2 pv e2e4
+13:08:59 [stockfish] <<< info depth 4 seldepth 5 multipv 1 score cp 37 nodes 258 nps 86000 hashfull 0 tbhits 0 time 3 pv d2d4
+13:08:59 [stockfish] <<< info depth 5 seldepth 9 multipv 1 score cp 29 nodes 541 nps 135250 hashfull 0 tbhits 0 time 4 pv e2e4 c7c5
+13:08:59 [stockfish] <<< info depth 6 seldepth 12 multipv 1 score cp 35 nodes 900 nps 180000 hashfull 0 tbhits 0 time 5 pv e2e4 c7c5 g1f3 b8c6
+13:08:59 [stockfish] <<< info depth 7 seldepth 9 multipv 1 score cp 33 nodes 1546 nps 257666 hashfull 1 tbhits 0 time 6 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6
+13:08:59 [stockfish] <<< info depth 8 seldepth 13 multipv 1 score cp 36 nodes 3260 nps 326000 hashfull 1 tbhits 0 time 10 pv e2e4 e7e5 g1f3 b8c6 b1c3
+13:08:59 [stockfish] <<< info depth 9 seldepth 12 multipv 1 score cp 38 nodes 3703 nps 336636 hashfull 1 tbhits 0 time 11 pv e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 d2d4 e5d4 f3d4
+13:08:59 [stockfish] <<< info depth 10 seldepth 12 multipv 1 score cp 69 nodes 4835 nps 402916 hashfull 1 tbhits 0 time 12 pv e2e4 e7e5 g1f3 b8c6
+13:08:59 [stockfish] <<< info depth 11 seldepth 24 multipv 1 score cp 51 nodes 32898 nps 438640 hashfull 10 tbhits 0 time 75 pv e2e4 e7e6 d2d4 d7d5 b1c3 d5e4 c3e4
+13:08:59 [stockfish] <<< info depth 12 seldepth 19 multipv 1 score cp 47 nodes 41065 nps 451263 hashfull 11 tbhits 0 time 91 pv e2e4 c7c5 b1c3 a7a6 g1f3 e7e6 d2d4 c5d4 f3d4
+13:08:59 [stockfish] <<< info depth 13 seldepth 20 multipv 1 score cp 46 nodes 52822 nps 459321 hashfull 16 tbhits 0 time 115 pv e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 f1e2 b8c6 f3d4 d8c7 b1c3 e7e6 d4c6
+13:08:59 [stockfish] <<< info depth 14 seldepth 19 multipv 1 score cp 48 nodes 57960 nps 463680 hashfull 17 tbhits 0 time 125 pv e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 f3d4 e7e6 b1c3 d8c7 f1d3 g8f6 f2f4 b8c6 d4c6
+13:08:59 [stockfish] <<< info depth 15 seldepth 18 multipv 1 score cp 49 nodes 61564 nps 466393 hashfull 18 tbhits 0 time 132 pv e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1e3 e7e6 f2f4 f8e7
+13:08:59 [stockfish] <<< info depth 16 seldepth 24 multipv 1 score cp 47 upperbound nodes 90066 nps 450330 hashfull 31 tbhits 0 time 200 pv e2e4 c7c5
+13:08:59 [stockfish] <<< bestmove e2e4 ponder c7c5
+13:08:59 [referee] >>> position startpos moves e2e4
+13:08:59 [referee] >>> d
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | r | n | b | q | k | b | n | r |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | p | p | p | p | p | p | p | p |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   | P |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | P | P | P | P |   | P | P | P |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | R | N | B | Q | K | B | N | R |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<< FEN: rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -
+13:08:59 [referee] >>> position startpos moves e2e4
+13:08:59 [referee] >>> d
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | r | n | b | q | k | b | n | r |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | p | p | p | p | p | p | p | p |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   | P |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | P | P | P | P |   | P | P | P |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<<  | R | N | B | Q | K | B | N | R |
+13:08:59 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:08:59 [referee] <<< 
+13:08:59 [referee] <<< FEN: rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -
+13:08:59 [referee] >>> position startpos moves e2e4
+13:08:59 [referee] >>> go depth 1
+13:08:59 [referee] <<< info depth 1 seldepth 3 score cp -13 nodes 28 nps 28 time 0 pv d7d5
+13:08:59 [referee] <<< bestmove d7d5
+13:08:59 [stockfish] >>> position startpos moves e2e4
+13:08:59 [stockfish] >>> go movetime 200
+13:08:59 [stockfish] <<< info string Available processors: 0-7
+13:08:59 [stockfish] <<< info string Using 1 thread
+13:08:59 [stockfish] <<< info string NNUE evaluation using nn-c288c895ea92.nnue (125MiB, (102384, 1024, 15, 32, 1))
+13:08:59 [stockfish] <<< info string NNUE evaluation using nn-37f18f62d772.nnue (6MiB, (22528, 128, 15, 32, 1))
+13:08:59 [stockfish] <<< info string Network replica 1: Local memory. Shared memory not supported by the OS. Local allocation fallback.
+13:08:59 [stockfish] <<< info depth 1 seldepth 6 multipv 1 score cp -44 nodes 26 nps 26000 hashfull 0 tbhits 0 time 1 pv c7c5
+13:08:59 [stockfish] <<< info depth 2 seldepth 3 multipv 1 score cp -42 nodes 49 nps 49000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3
+13:08:59 [stockfish] <<< info depth 3 seldepth 4 multipv 1 score cp -47 nodes 134 nps 134000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6
+13:08:59 [stockfish] <<< info depth 4 seldepth 7 multipv 1 score cp -41 nodes 230 nps 230000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6
+13:08:59 [stockfish] <<< info depth 5 seldepth 8 multipv 1 score cp -47 nodes 346 nps 346000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 d8d5
+13:08:59 [stockfish] <<< info depth 6 seldepth 8 multipv 1 score cp -47 nodes 379 nps 379000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 d8d5
+13:08:59 [stockfish] <<< info depth 7 seldepth 8 multipv 1 score cp -47 nodes 415 nps 415000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 d8d5
+13:08:59 [stockfish] <<< info depth 8 seldepth 13 multipv 1 score cp -47 nodes 576 nps 576000 hashfull 0 tbhits 0 time 1 pv c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 d8d5 d2d4 g8f6 c3c4
+13:08:59 [stockfish] <<< info depth 9 seldepth 15 multipv 1 score cp -45 nodes 1194 nps 597000 hashfull 0 tbhits 0 time 2 pv c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 d8d5 d2d4 g8f6 c1e3 c5d4 c3d4 c8g4
+13:08:59 [stockfish] <<< info depth 10 seldepth 21 multipv 1 score cp -46 nodes 7468 nps 533428 hashfull 2 tbhits 0 time 14 pv c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 d8c7 f1d3 b8c6 d4c6 b7c6 e1g1
+13:08:59 [stockfish] <<< info depth 11 seldepth 13 multipv 1 score cp -46 nodes 7573 nps 540928 hashfull 2 tbhits 0 time 14 pv c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 d8c7 f1d3 b8c6
+13:08:59 [stockfish] <<< info depth 12 seldepth 15 multipv 1 score cp -46 nodes 8295 nps 553000 hashfull 2 tbhits 0 time 15 pv c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 d8c7 f1d3 b8c6 d4c6 b7c6 e1g1
+13:09:00 [stockfish] <<< info depth 13 seldepth 24 multipv 1 score cp -49 nodes 21034 nps 500809 hashfull 8 tbhits 0 time 42 pv c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 b8c6 d4c6 b7c6 f1d3 d8c7 e1g1 g8f6 f1e1 f8d6 h2h3 d6h2 g1h1 h2e5
+13:09:00 [stockfish] <<< info depth 14 seldepth 18 multipv 1 score cp -49 nodes 21301 nps 507166 hashfull 8 tbhits 0 time 42 pv c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 b8c6 d4c6 b7c6 f1d3 d8c7 e1g1 g8f6 f1e1 f8d6
+13:09:00 [stockfish] <<< info depth 15 seldepth 27 multipv 1 score cp -40 nodes 57919 nps 486714 hashfull 23 tbhits 0 time 119 pv e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 g8e7 f1d3 b8c6 g1f3 c5d4 c3d4 e7f5 b1c3 f5d4 f3d4 c6d4
+13:09:00 [stockfish] <<< info depth 16 seldepth 24 multipv 1 score cp -35 nodes 93632 nps 498042 hashfull 34 tbhits 0 time 188 pv e7e6 d2d4 d7d5 b1c3 g8f6 c1g5 d5e4 c3e4 f8e7 e4f6 e7f6 g5f6 d8f6 g1f3 e8g8 d1d3 b8c6
+13:09:00 [stockfish] <<< info depth 17 seldepth 24 multipv 1 score cp -35 nodes 98336 nps 491680 hashfull 37 tbhits 0 time 200 pv e7e6 d2d4 d7d5 b1c3 g8f6 c1g5 d5e4 c3e4 f8e7 e4f6 e7f6 g5f6 d8f6 g1f3 e8g8 d1d3 b8c6
+13:09:00 [stockfish] <<< bestmove e7e6 ponder d2d4
+13:09:00 [b:twin] >>> position startpos moves e2e4
+13:09:00 [b:twin] >>> go movetime 1000
+13:09:00 [b:twin] <<< info depth 1 seldepth 3 score cp -13 nodes 28 nps 28 time 0 pv d7d5
+13:09:00 [b:twin] <<< info depth 2 seldepth 3 score cp -8 nodes 81 nps 81 time 0 pv e7e5 d2d3
+13:09:00 [b:twin] <<< info depth 3 seldepth 6 score cp -9 nodes 266 nps 266 time 0 pv d7d5 e4d5 d8d5
+13:09:00 [b:twin] <<< info depth 4 seldepth 7 score cp -16 nodes 592 nps 592 time 0 pv d7d5 e4d5 e7e6 d5e6
+13:09:00 [b:twin] <<< info depth 5 seldepth 10 score cp -16 nodes 1072 nps 1072000 time 1 pv d7d5 e4d5 e7e6 d5e6 c8e6
+13:09:00 [b:twin] <<< info depth 6 seldepth 13 score cp -16 nodes 3495 nps 1165000 time 3 pv g8f6 b1c3 d7d5 e4d5 f6d5 d2d4
+13:09:00 [b:twin] <<< info depth 7 seldepth 14 score cp -17 nodes 9377 nps 1172125 time 8 pv d7d5 e4d5 c7c6 d5c6 b8c6 b1c3 g8f6
+13:09:00 [b:twin] <<< info depth 8 seldepth 16 score cp -35 nodes 17519 nps 1347615 time 13 pv d7d5 e4d5 c7c6 d2d4 c6d5 b1c3 g8f6 c1f4
+13:09:00 [b:twin] <<< info depth 9 seldepth 14 score cp -20 nodes 22148 nps 1384250 time 16 pv d7d5 e4d5 c7c6 d2d4 c6d5 b1c3 g8f6 c1f4 b8c6
+13:09:00 [b:twin] <<< info depth 10 seldepth 17 score cp -35 nodes 39312 nps 1456000 time 27 pv d7d5 e4d5 c7c6 d2d4 c6d5 b1c3 g8f6 c1f4 b8c6 g1f3
+13:09:00 [b:twin] <<< info depth 11 seldepth 18 score cp -31 nodes 61993 nps 1512024 time 41 pv d7d5 e4d5 c7c6 d2d4 c6d5 b1c3 g8f6 c1f4 b8c6 g1f3 c8e6
+13:09:00 [b:twin] <<< info depth 12 seldepth 19 score cp -30 nodes 106189 nps 1561602 time 68 pv d7d5 e4d5 g8f6 f1b5 c8d7 b5d7 b8d7 d2d4 f6d5 g1f3 c7c5 e1g1 c5d4 f3d4
+13:09:00 [b:twin] <<< info depth 13 seldepth 23 score cp -36 nodes 167190 nps 1577264 time 106 pv d7d5 e4d5 g8f6 b1c3 f6d5 c3d5 d8d5 d2d4 d5e4 c1e3 c8f5 c2c3 b8c6 g1f3
+13:09:00 [b:twin] <<< info depth 14 seldepth 25 score cp -18 nodes 436598 nps 1500336 time 291 pv e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d3 e4f6 f1e2 b8c6 e1g1 c8e6 c1e3
+13:09:00 [b:twin] <<< info depth 15 seldepth 24 score cp -20 nodes 580576 nps 1488656 time 390 pv e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d3 e4f6 b1c3 b8c6 d3d4 c8f5 f1d3 f5d3
+13:09:00 [b:twin] <<< info depth 16 seldepth 25 score cp -20 nodes 796669 nps 1483554 time 537 pv e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d3 e4f6 b1c3 b8c6 d3d4 c8f5 f1d3 f5d3 d1d3
+13:09:01 [b:twin] <<< bestmove e7e5
+13:09:01 [referee] >>> position startpos moves e2e4 e7e5
+13:09:01 [referee] >>> d
+13:09:01 [referee] <<< 
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  | r | n | b | q | k | b | n | r |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  | p | p | p | p |   | p | p | p |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  |   |   |   |   | p |   |   |   |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  |   |   |   |   | P |   |   |   |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  |   |   |   |   |   |   |   |   |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  | P | P | P | P |   | P | P | P |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<<  | R | N | B | Q | K | B | N | R |
+13:09:01 [referee] <<<  +---+---+---+---+---+---+---+---+
+13:09:01 [referee] <<< 
+13:09:01 [referee] <<< FEN: rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -
+13:09:01 [referee] >>> position startpos moves e2e4 e7e5
+13:09:01 [referee] >>> go depth 1
+13:09:01 [referee] <<< info depth 1 seldepth 3 score cp 43 nodes 36 nps 36 time 0 pv d2d4
+13:09:01 [referee] <<< bestmove d2d4
+13:09:01 [stockfish] >>> position startpos moves e2e4 e7e5
+13:09:01 [stockfish] >>> go movetime 200
+13:09:01 [stockfish] <<< info string Available processors: 0-7
+13:09:01 [stockfish] <<< info string Using 1 thread
+13:09:01 [stockfish] <<< info string NNUE evaluation using nn-c288c895ea92.nnue (125MiB, (102384, 1024, 15, 32, 1))
+13:09:01 [stockfish] <<< info string NNUE evaluation using nn-37f18f62d772.nnue (6MiB, (22528, 128, 15, 32, 1))
+13:09:01 [stockfish] <<< info string Network replica 1: Local memory. Shared memory not supported by the OS. Local allocation fallback.
+13:09:01 [stockfish] <<< info depth 1 seldepth 3 multipv 1 score cp 51 nodes 31 nps 31000 hashfull 0 tbhits 0 time 1 pv g1f3
+13:09:01 [stockfish] <<< info depth 2 seldepth 5 multipv 1 score cp 56 nodes 74 nps 74000 hashfull 0 tbhits 0 time 1 pv g1f3
+13:09:01 [stockfish] <<< info depth 3 seldepth 5 multipv 1 score cp 65 nodes 151 nps 151000 hashfull 0 tbhits 0 time 1 pv g1f3
+13:09:01 [stockfish] <<< info depth 4 seldepth 11 multipv 1 score cp 54 nodes 735 nps 735000 hashfull 0 tbhits 0 time 1 pv b1c3 g8f6 g1f3
+13:09:01 [stockfish] <<< info depth 5 seldepth 7 multipv 1 score cp 56 nodes 822 nps 822000 hashfull 0 tbhits 0 time 1 pv b1c3 g8f6 g1f3 f8b4 f3e5
+13:09:01 [stockfish] <<< info depth 6 seldepth 7 multipv 1 score cp 56 nodes 884 nps 884000 hashfull 0 tbhits 0 time 1 pv b1c3 g8f6 g1f3 f8b4 f3e5 e8g8
+13:09:01 [stockfish] <<< info depth 7 seldepth 11 multipv 1 score cp 62 nodes 1751 nps 875500 hashfull 0 tbhits 0 time 2 pv b1c3 f8b4 c3d5 b4c5 g1f3
+13:09:01 [stockfish] <<< info depth 8 seldepth 16 multipv 1 score cp 62 nodes 3256 nps 542666 hashfull 0 tbhits 0 time 6 pv g1f3 g8f6 f3e5 f6e4 e5f7 e8f7 d1h5 g7g6
+13:09:01 [stockfish] <<< info depth 9 seldepth 13 multipv 1 score cp 65 nodes 4049 nps 578428 hashfull 0 tbhits 0 time 7 pv g1f3 d7d6 d2d4 e5d4 f3d4 g8f6 b1c3 f8e7 f1e2 e8g8
+13:09:01 [stockfish] <<< info depth 10 seldepth 15 multipv 1 score cp 62 nodes 5325 nps 532500 hashfull 1 tbhits 0 time 10 pv g1f3 d7d6 b1c3 b8d7 d2d4 g8f6 f1c4 f8e7 d4e5 d7e5 f3e5 d6e5
+13:09:01 [stockfish] <<< info depth 11 seldepth 15 multipv 1 score cp 58 nodes 11846 nps 455615 hashfull 5 tbhits 0 time 26 pv g1f3 d7d6 d2d4 b8d7 f1d3 g8f6 e1g1 c7c6
+13:09:01 [stockfish] <<< info depth 12 seldepth 19 multipv 1 score cp 48 nodes 32754 nps 430973 hashfull 14 tbhits 0 time 76 pv g1f3 b8c6 f1b5 g8e7 e1g1 a7a6 b5a4 e7g6 c2c3 f8e7 d2d4 e5d4 c3d4 e8g8 d4d5 c6b4 e4e5
+13:09:01 [stockfish] <<< info depth 13 seldepth 26 multipv 1 score cp 46 nodes 70757 nps 434092 hashfull 30 tbhits 0 time 163 pv g1f3 b8c6 f1b5 c6d4 f3d4 e5d4 b5a4
+13:09:01 [stockfish] <<< info depth 14 seldepth 21 multipv 1 score cp 45 nodes 73003 nps 437143 hashfull 30 tbhits 0 time 167 pv g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 b7b5 a4b3 f8e7 d2d4 d7d6 a2a4
+13:09:01 [stockfish] <<< info depth 15 seldepth 20 multipv 1 score cp 43 upperbound nodes 87851 nps 437069 hashfull 35 tbhits 0 time 201 pv g1f3 b8c6
+13:09:01 [stockfish] <<< bestmove g1f3 ponder b8c6
+13:09:01 [referee] >>> quit
+13:09:01 [b:twin] >>> quit
+13:09:01 [stockfish] >>> quit

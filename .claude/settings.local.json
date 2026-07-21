@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(clang++ --version)",
+      "Bash(sysctl -n hw.ncpu)",
+      "Bash(clang++ -std=c++17 -O2 -o /private/tmp/claude-501/-Users-tribalscale-Documents-ce/0505de2a-8ae7-4710-8da5-72f83be9f0d6/scratchpad/perft_test perft_test.cpp)",
+      "Bash(echo \"=== BUILD EXIT $? ===\")",
+      "Bash(/private/tmp/claude-501/-Users-tribalscale-Documents-ce/0505de2a-8ae7-4710-8da5-72f83be9f0d6/scratchpad/perft_test *)",
+      "Bash(clang++ -std=c++17 -O2 -o /private/tmp/claude-501/-Users-tribalscale-Documents-ce/0505de2a-8ae7-4710-8da5-72f83be9f0d6/scratchpad/eval_test eval_test.cpp)",
+      "Bash(/private/tmp/claude-501/-Users-tribalscale-Documents-ce/0505de2a-8ae7-4710-8da5-72f83be9f0d6/scratchpad/eval_test)",
+      "Bash(cd *)",
+      "Bash(make clean *)",
+      "Bash(make)",
+      "Bash(echo \"=== EXIT $? ===\")",
+      "Bash(clang++ -std=c++17 -O3 -o perft_test perft_test.cpp)",
+      "Bash(./perft_test)",
+      "Bash(clang++ -std=c++17 -O3 -o eval_test eval_test.cpp)",
+      "Bash(./eval_test)",
+      "Bash(python3 uci_driver.py ./twin)",
+      "Bash(clang++ -std=c++17 -O3 -o selfplay_test selfplay_test.cpp)",
+      "Bash(./selfplay_test 8)",
+      "Bash(./twin)",
+      "Bash(clang++ -std=c++17 -O3 -Wall -Wextra -Wshadow -c main.cpp -o /dev/null)",
+      "WebSearch"
+    ]
+  }
+}
