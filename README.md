@@ -1,4 +1,6 @@
-# Twin — a UCI chess engine
+# one shotted engine that DEMOLISHED vedant's silly little bitterfish chess engine
+
+
 
 A from-scratch, single-machine, traditional (alpha-beta) chess engine written in
 C++17. Bitboard board representation, magic-bitboard sliding attacks, a tapered
